@@ -1,6 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
-
+    <labels>
+        <fullName>CancelButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>SaveButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>ClearSelectionButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear Selection</shortDescription>
+        <value>Clear Selection</value>
+    </labels>
+    <labels>
+        <fullName>SetFilterAction</fullName>
+        <categories>actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Set Filter</shortDescription>
+        <value>Set Filter</value>
+    </labels>
+    <labels>
+        <fullName>ClearFilterAction</fullName>
+        <categories>actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear Filter</shortDescription>
+        <value>Clear Filter</value>
+    </labels>
+    <labels>
+        <fullName>ColumnHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Column</shortDescription>
+        <value>Column</value>
+    </labels>
+    <labels>
+        <fullName>FilterHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>LabelHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label</shortDescription>
+        <value>Label</value>
+    </labels>
+    <labels>
+        <fullName>ErrorRequiredEntry</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required</shortDescription>
+        <value>This is a required entry.  At least 1 row must be selected.</value>
+    </labels>
+    <labels>
+        <fullName>EmptyTableMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Empty</shortDescription>
+        <value>This table currently has no data to display</value>
+    </labels>
     <labels>
         <fullName>TooManyResultsMessage</fullName>
         <categories>messages</categories>

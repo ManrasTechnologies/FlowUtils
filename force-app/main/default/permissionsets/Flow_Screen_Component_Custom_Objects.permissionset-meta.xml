@@ -161,7 +161,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>USF Flow Screen Component - Custom Objects</label>
+    <label>Flow Screen Component - Custom Objects</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

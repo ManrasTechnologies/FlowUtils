@@ -14,7 +14,7 @@
     </classAccesses>
     <description>Permission Set that gives access to the @AuraEnabled Apex Classes that are part of the Datatable Flow Screen LWC</description>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>USF Flow Screen Component - Datatable</label>
+    <label>Flow Screen Component - Datatable</label>
     <userPermissions>
         <enabled>true</enabled>
         <name>RunFlow</name>
