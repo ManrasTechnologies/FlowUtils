@@ -20,7 +20,7 @@ global without sharing class ConvertRecordsToCSVQueueable implements Queueable {
     private Inputs input;
     
     global enum CSVParseType {
-        HEADERS_ONLY,
+        HEADONLY,
         ROWS_ONLY,
         ALL
     }
@@ -178,7 +178,7 @@ global without sharing class ConvertRecordsToCSVQueueable implements Queueable {
         // If primary fields were provided, set them to the column values
         if (fieldList != null) {
             columnHeaders = new Set<String>(fieldList);
-            if (parseType == CSVParseType.HEADERS_ONLY || parseType == CSVParseType.ALL) {
+            if (parseType == CSVParseType.HEADONLY || parseType == CSVParseType.ALL) {
                 columnHeadersCSV = String.join(new List<String>(columnHeaders), ',') + '\n';
             }
             
@@ -216,11 +216,11 @@ global without sharing class ConvertRecordsToCSVQueueable implements Queueable {
             System.debug('Logs: headers: ' + columnHeaders);
 
             // Check limits
-            if (!executingAsync && parseType != CSVParseType.HEADERS_ONLY && columnHeaders.size()*objectList.size() > SYNC_ITERATION_LIMIT) {
+            if (!executingAsync && parseType != CSVParseType.HEADONLY && columnHeaders.size()*objectList.size() > SYNC_ITERATION_LIMIT) {
                 throw new GenerateCSVException('The batch size you have provided is too large to execute synchronously. Please reduce the number of columns or rows or run execute this action asynchronously.');
             }
             
-            if (parseType == CSVParseType.HEADERS_ONLY || parseType == CSVParseType.ALL) {
+            if (parseType == CSVParseType.HEADONLY || parseType == CSVParseType.ALL) {
                 columnHeadersCSV = String.join(new List<String>(columnHeaders), ',') + '\n';
             }
             
@@ -261,7 +261,7 @@ global without sharing class ConvertRecordsToCSVQueueable implements Queueable {
         // If primary fields were provided, set them to the column values
         if (fieldList != null) {
             columnHeaders = new Set<String>(fieldList);
-            if (parseType == CSVParseType.HEADERS_ONLY || parseType == CSVParseType.ALL) {
+            if (parseType == CSVParseType.HEADONLY || parseType == CSVParseType.ALL) {
             	columnHeadersCSV = String.join(new List<String>(columnHeaders), ',') + '\n';
             }
         }
@@ -281,11 +281,11 @@ global without sharing class ConvertRecordsToCSVQueueable implements Queueable {
                 columnHeaders.addAll(populatedFieldNames);
 
                 // Check limits
-                if (!executingAsync && parseType != CSVParseType.HEADERS_ONLY && columnHeaders.size()*objectList.size() > SYNC_ITERATION_LIMIT) {
+                if (!executingAsync && parseType != CSVParseType.HEADONLY && columnHeaders.size()*objectList.size() > SYNC_ITERATION_LIMIT) {
                     throw new GenerateCSVException('The batch size you have provided is too large to execute synchronously. Please reduce the number of columns or rows or run execute this action asynchronously.');
                 }
                 
-                if (parseType == CSVParseType.HEADERS_ONLY || parseType == CSVParseType.ALL) {
+                if (parseType == CSVParseType.HEADONLY || parseType == CSVParseType.ALL) {
                 	columnHeadersCSV = String.join(new List<String>(columnHeaders), ',') + '\n';
                 }
             }

@@ -335,7 +335,7 @@ global class MetadataService {
 		private String[] emailToCase_type_info=new String[]{'emailToCase',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableCaseFeed_type_info=new String[]{'enableCaseFeed',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableDraftEmails_type_info=new String[]{'enableDraftEmails',SOAP_M_URI,null,'0','1','false'};
-		private String[] enableEarlyEscalationRuleTriggers_type_info=new String[]{'enableEarlyEscalationRuleTriggers',SOAP_M_URI,null,'0','1','false'};
+		private String[] enableEarlyEscalationRuleTriggtype_info=new String[]{'enableEarlyEscalationRuleTriggers',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableEmailActionDefaultsHandler_type_info=new String[]{'enableEmailActionDefaultsHandler',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableSuggestedArticlesApplication_type_info=new String[]{'enableSuggestedArticlesApplication',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableSuggestedArticlesCustomerPortal_type_info=new String[]{'enableSuggestedArticlesCustomerPortal',SOAP_M_URI,null,'0','1','false'};
@@ -455,7 +455,7 @@ global class MetadataService {
 		private String[] linkTemplate_type_info=new String[]{'linkTemplate',SOAP_M_URI,null,'0','1','false'};
 		private String[] linkTemplateEnabled_type_info=new String[]{'linkTemplateEnabled',SOAP_M_URI,null,'0','1','false'};
 		private String[] linkTooltip_type_info=new String[]{'linkTooltip',SOAP_M_URI,null,'0','1','false'};
-		private String[] members_type_info=new String[]{'members',SOAP_M_URI,null,'0','-1','false'};
+		private String[] membtype_info=new String[]{'members',SOAP_M_URI,null,'0','-1','false'};
 		private String[] origin_type_info=new String[]{'origin',SOAP_M_URI,null,'0','1','false'};
 		private String[] recordDisplayFields_type_info=new String[]{'recordDisplayFields',SOAP_M_URI,null,'0','-1','false'};
 		private String[] recordIdField_type_info=new String[]{'recordIdField',SOAP_M_URI,null,'0','1','false'};
@@ -755,7 +755,7 @@ global class MetadataService {
 	global class PackageTypeMembers {
 		global String[] members;
 		global String name;
-		private String[] members_type_info=new String[]{'members',SOAP_M_URI,null,'0','-1','false'};
+		private String[] membtype_info=new String[]{'members',SOAP_M_URI,null,'0','-1','false'};
 		private String[] name_type_info=new String[]{'name',SOAP_M_URI,null,'1','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] field_order_type_info=new String[]{'members','name'};
@@ -1100,10 +1100,10 @@ global class MetadataService {
 		global MetadataService.QueueMembers queueMembers;
 		global String queueRoutingConfig;
 		global MetadataService.QueueSobject[] queueSobject;
-		private String[] doesSendEmailToMembers_type_info=new String[]{'doesSendEmailToMembers',SOAP_M_URI,null,'0','1','false'};
+		private String[] doesSendEmailToMembtype_info=new String[]{'doesSendEmailToMembers',SOAP_M_URI,null,'0','1','false'};
 		private String[] email_type_info=new String[]{'email',SOAP_M_URI,null,'0','1','false'};
 		private String[] name_type_info=new String[]{'name',SOAP_M_URI,null,'1','1','false'};
-		private String[] queueMembers_type_info=new String[]{'queueMembers',SOAP_M_URI,null,'0','1','false'};
+		private String[] queueMembtype_info=new String[]{'queueMembers',SOAP_M_URI,null,'0','1','false'};
 		private String[] queueRoutingConfig_type_info=new String[]{'queueRoutingConfig',SOAP_M_URI,null,'0','1','false'};
 		private String[] queueSobject_type_info=new String[]{'queueSobject',SOAP_M_URI,null,'0','-1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
@@ -1268,7 +1268,7 @@ global class MetadataService {
 		global Boolean showApprovalHistory;
 		private String[] active_type_info=new String[]{'active',SOAP_M_URI,null,'1','1','false'};
 		private String[] allowRecall_type_info=new String[]{'allowRecall',SOAP_M_URI,null,'0','1','false'};
-		private String[] allowedSubmitters_type_info=new String[]{'allowedSubmitters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] allowedSubmitttype_info=new String[]{'allowedSubmitters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] approvalPageFields_type_info=new String[]{'approvalPageFields',SOAP_M_URI,null,'0','1','false'};
 		private String[] approvalStep_type_info=new String[]{'approvalStep',SOAP_M_URI,null,'0','-1','false'};
 		private String[] description_type_info=new String[]{'description',SOAP_M_URI,null,'0','1','false'};
@@ -1367,7 +1367,7 @@ global class MetadataService {
 		global String object_x;
 		private String[] connector_type_info=new String[]{'connector',SOAP_M_URI,null,'0','1','false'};
 		private String[] faultConnector_type_info=new String[]{'faultConnector',SOAP_M_URI,null,'0','1','false'};
-		private String[] filters_type_info=new String[]{'filters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] filttype_info=new String[]{'filters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] inputReference_type_info=new String[]{'inputReference',SOAP_M_URI,null,'0','1','false'};
 		private String[] object_x_type_info=new String[]{'object',SOAP_M_URI,null,'0','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
@@ -1482,7 +1482,7 @@ global class MetadataService {
 		private String[] emailDefault_type_info=new String[]{'emailDefault',SOAP_M_URI,null,'0','1','false'};
 		private String[] excludeButtons_type_info=new String[]{'excludeButtons',SOAP_M_URI,null,'0','-1','false'};
 		private String[] feedLayout_type_info=new String[]{'feedLayout',SOAP_M_URI,null,'0','1','false'};
-		private String[] headers_type_info=new String[]{'headers',SOAP_M_URI,null,'0','-1','false'};
+		private String[] headtype_info=new String[]{'headers',SOAP_M_URI,null,'0','-1','false'};
 		private String[] layoutSections_type_info=new String[]{'layoutSections',SOAP_M_URI,null,'0','-1','false'};
 		private String[] miniLayout_type_info=new String[]{'miniLayout',SOAP_M_URI,null,'0','1','false'};
 		private String[] multilineLayoutFields_type_info=new String[]{'multilineLayoutFields',SOAP_M_URI,null,'0','-1','false'};
@@ -1638,7 +1638,7 @@ global class MetadataService {
 		global Boolean showMyTasksHoverLinks;
 		private String[] allowUsersToRelateMultipleContactsToTasksAndEvents_type_info=new String[]{'allowUsersToRelateMultipleContactsToTasksAndEvents',SOAP_M_URI,null,'0','1','false'};
 		private String[] autoRelateEventAttendees_type_info=new String[]{'autoRelateEventAttendees',SOAP_M_URI,null,'0','1','false'};
-		private String[] enableActivityReminders_type_info=new String[]{'enableActivityReminders',SOAP_M_URI,null,'0','1','false'};
+		private String[] enableActivityRemindtype_info=new String[]{'enableActivityReminders',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableClickCreateEvents_type_info=new String[]{'enableClickCreateEvents',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableDragAndDropScheduling_type_info=new String[]{'enableDragAndDropScheduling',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableEmailTracking_type_info=new String[]{'enableEmailTracking',SOAP_M_URI,null,'0','1','false'};
@@ -1681,9 +1681,9 @@ global class MetadataService {
 		private String[] conditions_type_info=new String[]{'conditions',SOAP_M_URI,null,'0','-1','false'};
 		private String[] connector_type_info=new String[]{'connector',SOAP_M_URI,null,'1','1','false'};
 		private String[] eventType_type_info=new String[]{'eventType',SOAP_M_URI,null,'1','1','false'};
-		private String[] inputParameters_type_info=new String[]{'inputParameters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] inputParamettype_info=new String[]{'inputParameters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] label_type_info=new String[]{'label',SOAP_M_URI,null,'1','1','false'};
-		private String[] outputParameters_type_info=new String[]{'outputParameters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] outputParamettype_info=new String[]{'outputParameters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] type_att_info=new String[]{'xsi:type'};
 		private String[] field_order_type_info=new String[]{'processMetadataValues','description','name', 'conditionLogic','conditions','connector','eventType','inputParameters','label','outputParameters'};
@@ -1964,7 +1964,7 @@ global class MetadataService {
 		private String[] columns_type_info=new String[]{'columns',SOAP_M_URI,null,'0','-1','false'};
 		private String[] division_type_info=new String[]{'division',SOAP_M_URI,null,'0','1','false'};
 		private String[] filterScope_type_info=new String[]{'filterScope',SOAP_M_URI,null,'1','1','false'};
-		private String[] filters_type_info=new String[]{'filters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] filttype_info=new String[]{'filters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] label_type_info=new String[]{'label',SOAP_M_URI,null,'1','1','false'};
 		private String[] language_type_info=new String[]{'language',SOAP_M_URI,null,'0','1','false'};
 		private String[] queue_type_info=new String[]{'queue',SOAP_M_URI,null,'0','1','false'};
@@ -2001,7 +2001,7 @@ global class MetadataService {
 		private String[] articlePDFCreationProfile_type_info=new String[]{'articlePDFCreationProfile',SOAP_M_URI,null,'0','1','false'};
 		private String[] articleglobalSharingCommunities_type_info=new String[]{'articleglobalSharingCommunities',SOAP_M_URI,null,'0','1','false'};
 		private String[] articleglobalSharingSites_type_info=new String[]{'articleglobalSharingSites',SOAP_M_URI,null,'0','1','false'};
-		private String[] articleglobalSharingSitesChatterAnswers_type_info=new String[]{'articleglobalSharingSitesChatterAnswers',SOAP_M_URI,null,'0','1','false'};
+		private String[] articleglobalSharingSitesChatterAnswtype_info=new String[]{'articleglobalSharingSitesChatterAnswers',SOAP_M_URI,null,'0','1','false'};
 		private String[] assignTo_type_info=new String[]{'assignTo',SOAP_M_URI,null,'0','1','false'};
 		private String[] customizationClass_type_info=new String[]{'customizationClass',SOAP_M_URI,null,'0','1','false'};
 		private String[] defaultContributionArticleType_type_info=new String[]{'defaultContributionArticleType',SOAP_M_URI,null,'0','1','false'};
@@ -2115,10 +2115,10 @@ global class MetadataService {
 		private String[] fieldText_type_info=new String[]{'fieldText',SOAP_M_URI,null,'0','1','false'};
 		private String[] fieldType_type_info=new String[]{'fieldType',SOAP_M_URI,null,'1','1','false'};
 		private String[] helpText_type_info=new String[]{'helpText',SOAP_M_URI,null,'0','1','false'};
-		private String[] inputParameters_type_info=new String[]{'inputParameters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] inputParamettype_info=new String[]{'inputParameters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] isRequired_type_info=new String[]{'isRequired',SOAP_M_URI,null,'0','1','false'};
 		private String[] isVisible_type_info=new String[]{'isVisible',SOAP_M_URI,null,'0','1','false'};
-		private String[] outputParameters_type_info=new String[]{'outputParameters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] outputParamettype_info=new String[]{'outputParameters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] scale_type_info=new String[]{'scale',SOAP_M_URI,null,'0','1','false'};
 		private String[] validationRule_type_info=new String[]{'validationRule',SOAP_M_URI,null,'0','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
@@ -2419,8 +2419,8 @@ global class MetadataService {
 		global Boolean enableReductionOrders;
 		global Boolean enableZeroQuantity;
 		private String[] enableNegativeQuantity_type_info=new String[]{'enableNegativeQuantity',SOAP_M_URI,null,'0','1','false'};
-		private String[] enableOrders_type_info=new String[]{'enableOrders',SOAP_M_URI,null,'0','1','false'};
-		private String[] enableReductionOrders_type_info=new String[]{'enableReductionOrders',SOAP_M_URI,null,'0','1','false'};
+		private String[] enableOrdtype_info=new String[]{'enableOrders',SOAP_M_URI,null,'0','1','false'};
+		private String[] enableReductionOrdtype_info=new String[]{'enableReductionOrders',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableZeroQuantity_type_info=new String[]{'enableZeroQuantity',SOAP_M_URI,null,'0','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] type_att_info=new String[]{'xsi:type'};
@@ -2612,7 +2612,7 @@ global class MetadataService {
 		global MetadataService.AgentConfigProfileAssignments profiles;
 		global MetadataService.AgentConfigUserAssignments users;
 		private String[] profiles_type_info=new String[]{'profiles',SOAP_M_URI,null,'0','1','false'};
-		private String[] users_type_info=new String[]{'users',SOAP_M_URI,null,'0','1','false'};
+		private String[] ustype_info=new String[]{'users',SOAP_M_URI,null,'0','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] field_order_type_info=new String[]{'profiles','users'};
 	}
@@ -2622,7 +2622,7 @@ global class MetadataService {
 		global MetadataService.Approver[] approver;
 		global String whenMultipleApprovers;
 		private String[] approver_type_info=new String[]{'approver',SOAP_M_URI,null,'0','-1','false'};
-		private String[] whenMultipleApprovers_type_info=new String[]{'whenMultipleApprovers',SOAP_M_URI,null,'0','1','false'};
+		private String[] whenMultipleApprovtype_info=new String[]{'whenMultipleApprovers',SOAP_M_URI,null,'0','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] field_order_type_info=new String[]{'approver','whenMultipleApprovers'};
 	}
@@ -2735,9 +2735,9 @@ global class MetadataService {
 		private String[] chart_type_info=new String[]{'chart',SOAP_M_URI,null,'0','1','false'};
 		private String[] colorRanges_type_info=new String[]{'colorRanges',SOAP_M_URI,null,'0','-1','false'};
 		private String[] columns_type_info=new String[]{'columns',SOAP_M_URI,null,'0','-1','false'};
-		private String[] crossFilters_type_info=new String[]{'crossFilters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] crossFilttype_info=new String[]{'crossFilters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] currency_x_type_info=new String[]{'currency',SOAP_M_URI,null,'0','1','false'};
-		private String[] dataCategoryFilters_type_info=new String[]{'dataCategoryFilters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] dataCategoryFilttype_info=new String[]{'dataCategoryFilters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] description_type_info=new String[]{'description',SOAP_M_URI,null,'0','1','false'};
 		private String[] division_type_info=new String[]{'division',SOAP_M_URI,null,'0','1','false'};
 		private String[] filter_type_info=new String[]{'filter',SOAP_M_URI,null,'0','1','false'};
@@ -2784,7 +2784,7 @@ global class MetadataService {
 		global Boolean showArticleSummariesPartnerPortal;
 		global Boolean showValidationStatusField;
 		global MetadataService.KnowledgeSuggestedArticlesSettings suggestedArticles;
-		private String[] answers_type_info=new String[]{'answers',SOAP_M_URI,null,'0','1','false'};
+		private String[] answtype_info=new String[]{'answers',SOAP_M_URI,null,'0','1','false'};
 		private String[] cases_type_info=new String[]{'cases',SOAP_M_URI,null,'0','1','false'};
 		private String[] defaultLanguage_type_info=new String[]{'defaultLanguage',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableChatterQuestionKBDeflection_type_info=new String[]{'enableChatterQuestionKBDeflection',SOAP_M_URI,null,'0','1','false'};
@@ -2989,7 +2989,7 @@ global class MetadataService {
 		private String[] emailOwnerOnPrivateReply_type_info=new String[]{'emailOwnerOnPrivateReply',SOAP_M_URI,null,'0','1','false'};
 		private String[] emailOwnerOnReply_type_info=new String[]{'emailOwnerOnReply',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableAnswerViaEmail_type_info=new String[]{'enableAnswerViaEmail',SOAP_M_URI,null,'0','1','false'};
-		private String[] enableChatterAnswers_type_info=new String[]{'enableChatterAnswers',SOAP_M_URI,null,'1','1','false'};
+		private String[] enableChatterAnswtype_info=new String[]{'enableChatterAnswers',SOAP_M_URI,null,'1','1','false'};
 		private String[] enableFacebookSSO_type_info=new String[]{'enableFacebookSSO',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableInlinePublisher_type_info=new String[]{'enableInlinePublisher',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableReputation_type_info=new String[]{'enableReputation',SOAP_M_URI,null,'0','1','false'};
@@ -3067,7 +3067,7 @@ global class MetadataService {
 		private String[] emailFooterDocument_type_info=new String[]{'emailFooterDocument',SOAP_M_URI,null,'0','1','false'};
 		private String[] emailHeaderDocument_type_info=new String[]{'emailHeaderDocument',SOAP_M_URI,null,'0','1','false'};
 		private String[] emailNotificationUrl_type_info=new String[]{'emailNotificationUrl',SOAP_M_URI,null,'0','1','false'};
-		private String[] enableChatterAnswers_type_info=new String[]{'enableChatterAnswers',SOAP_M_URI,null,'0','1','false'};
+		private String[] enableChatterAnswtype_info=new String[]{'enableChatterAnswers',SOAP_M_URI,null,'0','1','false'};
 		private String[] enablePrivateQuestions_type_info=new String[]{'enablePrivateQuestions',SOAP_M_URI,null,'0','1','false'};
 		private String[] expertsGroup_type_info=new String[]{'expertsGroup',SOAP_M_URI,null,'0','1','false'};
 		private String[] portal_type_info=new String[]{'portal',SOAP_M_URI,null,'0','1','false'};
@@ -3111,7 +3111,7 @@ global class MetadataService {
 		global Boolean saveEmailHeaders;
 		global String taskStatus;
 		private String[] addressType_type_info=new String[]{'addressType',SOAP_M_URI,null,'0','1','false'};
-		private String[] authorizedSenders_type_info=new String[]{'authorizedSenders',SOAP_M_URI,null,'0','1','false'};
+		private String[] authorizedSendtype_info=new String[]{'authorizedSenders',SOAP_M_URI,null,'0','1','false'};
 		private String[] caseOrigin_type_info=new String[]{'caseOrigin',SOAP_M_URI,null,'0','1','false'};
 		private String[] caseOwner_type_info=new String[]{'caseOwner',SOAP_M_URI,null,'0','1','false'};
 		private String[] caseOwnerType_type_info=new String[]{'caseOwnerType',SOAP_M_URI,null,'0','1','false'};
@@ -3121,7 +3121,7 @@ global class MetadataService {
 		private String[] emailServicesAddress_type_info=new String[]{'emailServicesAddress',SOAP_M_URI,null,'0','1','false'};
 		private String[] isVerified_type_info=new String[]{'isVerified',SOAP_M_URI,null,'0','1','false'};
 		private String[] routingName_type_info=new String[]{'routingName',SOAP_M_URI,null,'0','1','false'};
-		private String[] saveEmailHeaders_type_info=new String[]{'saveEmailHeaders',SOAP_M_URI,null,'0','1','false'};
+		private String[] saveEmailHeadtype_info=new String[]{'saveEmailHeaders',SOAP_M_URI,null,'0','1','false'};
 		private String[] taskStatus_type_info=new String[]{'taskStatus',SOAP_M_URI,null,'0','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] field_order_type_info=new String[]{'addressType','authorizedSenders','caseOrigin','caseOwner','caseOwnerType','casePriority','createTask','emailAddress','emailServicesAddress','isVerified','routingName','saveEmailHeaders','taskStatus'};
@@ -4193,7 +4193,7 @@ global class MetadataService {
 		global String valueField;
 		private String[] dataType_type_info=new String[]{'dataType',SOAP_M_URI,null,'1','1','false'};
 		private String[] displayField_type_info=new String[]{'displayField',SOAP_M_URI,null,'1','1','false'};
-		private String[] filters_type_info=new String[]{'filters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] filttype_info=new String[]{'filters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] limit_x_type_info=new String[]{'limit',SOAP_M_URI,null,'0','1','false'};
 		private String[] object_x_type_info=new String[]{'object',SOAP_M_URI,null,'1','1','false'};
 		private String[] outputAssignments_type_info=new String[]{'outputAssignments',SOAP_M_URI,null,'0','-1','false'};
@@ -4350,7 +4350,7 @@ global class MetadataService {
 		private String[] roleAndSubordinates_type_info=new String[]{'roleAndSubordinates',SOAP_M_URI,null,'0','1','false'};
 		private String[] roleAndSubordinatesInternal_type_info=new String[]{'roleAndSubordinatesInternal',SOAP_M_URI,null,'0','1','false'};
 		private String[] roles_type_info=new String[]{'roles',SOAP_M_URI,null,'0','1','false'};
-		private String[] users_type_info=new String[]{'users',SOAP_M_URI,null,'0','1','false'};
+		private String[] ustype_info=new String[]{'users',SOAP_M_URI,null,'0','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] field_order_type_info=new String[]{'globalGroups','roleAndSubordinates','roleAndSubordinatesInternal','roles','users'};
 	}
@@ -4926,7 +4926,7 @@ global class MetadataService {
     @JsonAccess(serializable='always' deserializable = 'always')
 	global class SubtabComponents {
 		global MetadataService.Container[] containers;
-		private String[] containers_type_info=new String[]{'containers',SOAP_M_URI,null,'0','-1','false'};
+		private String[] containtype_info=new String[]{'containers',SOAP_M_URI,null,'0','-1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] field_order_type_info=new String[]{'containers'};
 	}
@@ -5019,7 +5019,7 @@ global class MetadataService {
 		private String[] description_type_info=new String[]{'description',SOAP_M_URI,null,'0','1','false'};
 		private String[] formula_type_info=new String[]{'formula',SOAP_M_URI,null,'0','1','false'};
 		private String[] triggerType_type_info=new String[]{'triggerType',SOAP_M_URI,null,'1','1','false'};
-		private String[] workflowTimeTriggers_type_info=new String[]{'workflowTimeTriggers',SOAP_M_URI,null,'0','-1','false'};
+		private String[] workflowTimeTriggtype_info=new String[]{'workflowTimeTriggers',SOAP_M_URI,null,'0','-1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] type_att_info=new String[]{'xsi:type'};
 		private String[] field_order_type_info=new String[]{'fullName', 'actions','active','booleanFilter','criteriaItems','description','formula','triggerType','workflowTimeTriggers'};
@@ -5401,7 +5401,7 @@ global class MetadataService {
 		private String[] chartSummaries_type_info=new String[]{'chartSummaries',SOAP_M_URI,null,'0','-1','false'};
 		private String[] chartType_type_info=new String[]{'chartType',SOAP_M_URI,null,'1','1','false'};
 		private String[] enableHoverLabels_type_info=new String[]{'enableHoverLabels',SOAP_M_URI,null,'0','1','false'};
-		private String[] expandOthers_type_info=new String[]{'expandOthers',SOAP_M_URI,null,'0','1','false'};
+		private String[] expandOthtype_info=new String[]{'expandOthers',SOAP_M_URI,null,'0','1','false'};
 		private String[] groupingColumn_type_info=new String[]{'groupingColumn',SOAP_M_URI,null,'0','1','false'};
 		private String[] legendPosition_type_info=new String[]{'legendPosition',SOAP_M_URI,null,'0','1','false'};
 		private String[] location_type_info=new String[]{'location',SOAP_M_URI,null,'0','1','false'};
@@ -5499,7 +5499,7 @@ global class MetadataService {
 		global String eventType;
 		global String referenceData;
 		private String[] active_type_info=new String[]{'active',SOAP_M_URI,null,'0','1','false'};
-		private String[] eventParameters_type_info=new String[]{'eventParameters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] eventParamettype_info=new String[]{'eventParameters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] eventType_type_info=new String[]{'eventType',SOAP_M_URI,null,'1','1','false'};
 		private String[] referenceData_type_info=new String[]{'referenceData',SOAP_M_URI,null,'1','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
@@ -7027,7 +7027,7 @@ global class MetadataService {
 		global String eventSubscription;
 		global String referenceData;
 		global String type_x;
-		private String[] eventParameters_type_info=new String[]{'eventParameters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] eventParamettype_info=new String[]{'eventParameters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] eventSubscription_type_info=new String[]{'eventSubscription',SOAP_M_URI,null,'1','1','false'};
 		private String[] referenceData_type_info=new String[]{'referenceData',SOAP_M_URI,null,'0','1','false'};
 		private String[] type_x_type_info=new String[]{'type',SOAP_M_URI,null,'1','1','false'};
@@ -7087,15 +7087,15 @@ global class MetadataService {
 		global String[] territoriesAndSubordinates;
 		global String[] territory;
 		global String[] territoryAndSubordinates;
-		private String[] allCustomerPortalUsers_type_info=new String[]{'allCustomerPortalUsers',SOAP_M_URI,null,'0','1','false'};
-		private String[] allInternalUsers_type_info=new String[]{'allInternalUsers',SOAP_M_URI,null,'0','1','false'};
-		private String[] allPartnerUsers_type_info=new String[]{'allPartnerUsers',SOAP_M_URI,null,'0','1','false'};
+		private String[] allCustomerPortalUstype_info=new String[]{'allCustomerPortalUsers',SOAP_M_URI,null,'0','1','false'};
+		private String[] allInternalUstype_info=new String[]{'allInternalUsers',SOAP_M_URI,null,'0','1','false'};
+		private String[] allPartnerUstype_info=new String[]{'allPartnerUsers',SOAP_M_URI,null,'0','1','false'};
 		private String[] channelProgramGroup_type_info=new String[]{'channelProgramGroup',SOAP_M_URI,null,'0','-1','false'};
 		private String[] channelProgramGroups_type_info=new String[]{'channelProgramGroups',SOAP_M_URI,null,'0','-1','false'};
 		private String[] group_x_type_info=new String[]{'group',SOAP_M_URI,null,'0','-1','false'};
 		private String[] groups_type_info=new String[]{'groups',SOAP_M_URI,null,'0','-1','false'};
 		private String[] managerSubordinates_type_info=new String[]{'managerSubordinates',SOAP_M_URI,null,'0','-1','false'};
-		private String[] managers_type_info=new String[]{'managers',SOAP_M_URI,null,'0','-1','false'};
+		private String[] managtype_info=new String[]{'managers',SOAP_M_URI,null,'0','-1','false'};
 		private String[] portalRole_type_info=new String[]{'portalRole',SOAP_M_URI,null,'0','-1','false'};
 		private String[] portalRoleAndSubordinates_type_info=new String[]{'portalRoleAndSubordinates',SOAP_M_URI,null,'0','-1','false'};
 		private String[] queue_type_info=new String[]{'queue',SOAP_M_URI,null,'0','-1','false'};
@@ -7164,7 +7164,7 @@ global class MetadataService {
 		private String[] assignNullValuesIfNoRecordsFound_type_info=new String[]{'assignNullValuesIfNoRecordsFound',SOAP_M_URI,null,'0','1','false'};
 		private String[] connector_type_info=new String[]{'connector',SOAP_M_URI,null,'0','1','false'};
 		private String[] faultConnector_type_info=new String[]{'faultConnector',SOAP_M_URI,null,'0','1','false'};
-		private String[] filters_type_info=new String[]{'filters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] filttype_info=new String[]{'filters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] object_x_type_info=new String[]{'object',SOAP_M_URI,null,'1','1','false'};
 		private String[] outputAssignments_type_info=new String[]{'outputAssignments',SOAP_M_URI,null,'0','-1','false'};
 		private String[] outputReference_type_info=new String[]{'outputReference',SOAP_M_URI,null,'0','1','false'};
@@ -7380,7 +7380,7 @@ global class MetadataService {
 		private String[] colorPalette_type_info=new String[]{'colorPalette',SOAP_M_URI,null,'0','1','false'};
 		private String[] dashboardChartTheme_type_info=new String[]{'dashboardChartTheme',SOAP_M_URI,null,'0','1','false'};
 		private String[] dashboardColorPalette_type_info=new String[]{'dashboardColorPalette',SOAP_M_URI,null,'0','1','false'};
-		private String[] dashboardFilters_type_info=new String[]{'dashboardFilters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] dashboardFilttype_info=new String[]{'dashboardFilters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] dashboardGridLayout_type_info=new String[]{'dashboardGridLayout',SOAP_M_URI,null,'0','1','false'};
 		private String[] dashboardResultRefreshedDate_type_info=new String[]{'dashboardResultRefreshedDate',SOAP_M_URI,null,'0','1','false'};
 		private String[] dashboardResultRunningUser_type_info=new String[]{'dashboardResultRunningUser',SOAP_M_URI,null,'0','1','false'};
@@ -7441,7 +7441,7 @@ global class MetadataService {
 		global MetadataService.SkillProfileAssignments profiles;
 		global MetadataService.SkillUserAssignments users;
 		private String[] profiles_type_info=new String[]{'profiles',SOAP_M_URI,null,'0','1','false'};
-		private String[] users_type_info=new String[]{'users',SOAP_M_URI,null,'0','1','false'};
+		private String[] ustype_info=new String[]{'users',SOAP_M_URI,null,'0','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] field_order_type_info=new String[]{'profiles','users'};
 	}
@@ -7519,8 +7519,8 @@ global class MetadataService {
 		private String[] apexClass_type_info=new String[]{'apexClass',SOAP_M_URI,null,'1','1','false'};
 		private String[] connector_type_info=new String[]{'connector',SOAP_M_URI,null,'0','1','false'};
 		private String[] faultConnector_type_info=new String[]{'faultConnector',SOAP_M_URI,null,'0','1','false'};
-		private String[] inputParameters_type_info=new String[]{'inputParameters',SOAP_M_URI,null,'0','-1','false'};
-		private String[] outputParameters_type_info=new String[]{'outputParameters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] inputParamettype_info=new String[]{'inputParameters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] outputParamettype_info=new String[]{'outputParameters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] type_att_info=new String[]{'xsi:type'};
 		private String[] field_order_type_info=new String[]{'processMetadataValues','description','name','label','locationX','locationY', 'apexClass','connector','faultConnector','inputParameters','outputParameters'};
@@ -7561,7 +7561,7 @@ global class MetadataService {
 		private String[] autocollapsePublisher_type_info=new String[]{'autocollapsePublisher',SOAP_M_URI,null,'0','1','false'};
 		private String[] compactFeed_type_info=new String[]{'compactFeed',SOAP_M_URI,null,'0','1','false'};
 		private String[] feedFilterPosition_type_info=new String[]{'feedFilterPosition',SOAP_M_URI,null,'0','1','false'};
-		private String[] feedFilters_type_info=new String[]{'feedFilters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] feedFilttype_info=new String[]{'feedFilters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] fullWidthFeed_type_info=new String[]{'fullWidthFeed',SOAP_M_URI,null,'0','1','false'};
 		private String[] hideSidebar_type_info=new String[]{'hideSidebar',SOAP_M_URI,null,'0','1','false'};
 		private String[] highlightExternalFeedItems_type_info=new String[]{'highlightExternalFeedItems',SOAP_M_URI,null,'0','1','false'};
@@ -7644,7 +7644,7 @@ global class MetadataService {
 		private String[] attachmentOption_type_info=new String[]{'attachmentOption',SOAP_M_URI,null,'1','1','false'};
 		private String[] authenticationFailureAction_type_info=new String[]{'authenticationFailureAction',SOAP_M_URI,null,'1','1','false'};
 		private String[] authorizationFailureAction_type_info=new String[]{'authorizationFailureAction',SOAP_M_URI,null,'1','1','false'};
-		private String[] authorizedSenders_type_info=new String[]{'authorizedSenders',SOAP_M_URI,null,'0','1','false'};
+		private String[] authorizedSendtype_info=new String[]{'authorizedSenders',SOAP_M_URI,null,'0','1','false'};
 		private String[] emailServicesAddresses_type_info=new String[]{'emailServicesAddresses',SOAP_M_URI,null,'0','-1','false'};
 		private String[] errorRoutingAddress_type_info=new String[]{'errorRoutingAddress',SOAP_M_URI,null,'0','1','false'};
 		private String[] functionInactiveAction_type_info=new String[]{'functionInactiveAction',SOAP_M_URI,null,'1','1','false'};
@@ -7759,7 +7759,7 @@ global class MetadataService {
     @JsonAccess(serializable='always' deserializable = 'always')
 	global class PrimaryTabComponents {
 		global MetadataService.Container[] containers;
-		private String[] containers_type_info=new String[]{'containers',SOAP_M_URI,null,'0','-1','false'};
+		private String[] containtype_info=new String[]{'containers',SOAP_M_URI,null,'0','-1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] field_order_type_info=new String[]{'containers'};
 	}
@@ -8345,8 +8345,8 @@ global class MetadataService {
 		private String[] actionType_type_info=new String[]{'actionType',SOAP_M_URI,null,'1','1','false'};
 		private String[] connector_type_info=new String[]{'connector',SOAP_M_URI,null,'0','1','false'};
 		private String[] faultConnector_type_info=new String[]{'faultConnector',SOAP_M_URI,null,'0','1','false'};
-		private String[] inputParameters_type_info=new String[]{'inputParameters',SOAP_M_URI,null,'0','-1','false'};
-		private String[] outputParameters_type_info=new String[]{'outputParameters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] inputParamettype_info=new String[]{'inputParameters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] outputParamettype_info=new String[]{'outputParameters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] type_att_info=new String[]{'xsi:type'};
 		private String[] field_order_type_info=new String[]{'processMetadataValues','description','name','label','locationX','locationY', 'actionName','actionType','connector','faultConnector','inputParameters','outputParameters'};
@@ -8511,10 +8511,10 @@ global class MetadataService {
 		global Boolean enableUpdateReminders;
 		global MetadataService.FindSimilarOppFilter findSimilarOppFilter;
 		global Boolean promptToAddProducts;
-		private String[] autoActivateNewReminders_type_info=new String[]{'autoActivateNewReminders',SOAP_M_URI,null,'0','1','false'};
+		private String[] autoActivateNewRemindtype_info=new String[]{'autoActivateNewReminders',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableFindSimilarOpportunities_type_info=new String[]{'enableFindSimilarOpportunities',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableOpportunityTeam_type_info=new String[]{'enableOpportunityTeam',SOAP_M_URI,null,'0','1','false'};
-		private String[] enableUpdateReminders_type_info=new String[]{'enableUpdateReminders',SOAP_M_URI,null,'0','1','false'};
+		private String[] enableUpdateRemindtype_info=new String[]{'enableUpdateReminders',SOAP_M_URI,null,'0','1','false'};
 		private String[] findSimilarOppFilter_type_info=new String[]{'findSimilarOppFilter',SOAP_M_URI,null,'0','1','false'};
 		private String[] promptToAddProducts_type_info=new String[]{'promptToAddProducts',SOAP_M_URI,null,'0','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
@@ -12511,7 +12511,7 @@ global class MetadataService {
 		global String userAlias;
 		global String userVisibility;
 		private String[] actionUrl_type_info=new String[]{'actionUrl',SOAP_M_URI,null,'1','1','false'};
-		private String[] headers_type_info=new String[]{'headers',SOAP_M_URI,null,'0','1','false'};
+		private String[] headtype_info=new String[]{'headers',SOAP_M_URI,null,'0','1','false'};
 		private String[] isConfirmationRequired_type_info=new String[]{'isConfirmationRequired',SOAP_M_URI,null,'1','1','false'};
 		private String[] isGroupDefault_type_info=new String[]{'isGroupDefault',SOAP_M_URI,null,'1','1','false'};
 		private String[] label_type_info=new String[]{'label',SOAP_M_URI,null,'0','1','false'};
@@ -12546,7 +12546,7 @@ global class MetadataService {
 		private String[] minutesCustomClass_type_info=new String[]{'minutesCustomClass',SOAP_M_URI,null,'0','1','false'};
 		private String[] minutesToComplete_type_info=new String[]{'minutesToComplete',SOAP_M_URI,null,'0','1','false'};
 		private String[] successActions_type_info=new String[]{'successActions',SOAP_M_URI,null,'0','-1','false'};
-		private String[] timeTriggers_type_info=new String[]{'timeTriggers',SOAP_M_URI,null,'0','-1','false'};
+		private String[] timeTriggtype_info=new String[]{'timeTriggers',SOAP_M_URI,null,'0','-1','false'};
 		private String[] useCriteriaStartTime_type_info=new String[]{'useCriteriaStartTime',SOAP_M_URI,null,'0','1','false'};
 		private String[] apex_schema_type_info=new String[]{SOAP_M_URI,'true','false'};
 		private String[] field_order_type_info=new String[]{'businessHours','criteriaBooleanFilter','milestoneCriteriaFilterItems','milestoneCriteriaFormula','milestoneName','minutesCustomClass','minutesToComplete','successActions','timeTriggers','useCriteriaStartTime'};
@@ -12883,7 +12883,7 @@ global class MetadataService {
 		global Boolean isActive;
 		global String localPart;
 		global String runAsUser;
-		private String[] authorizedSenders_type_info=new String[]{'authorizedSenders',SOAP_M_URI,null,'0','1','false'};
+		private String[] authorizedSendtype_info=new String[]{'authorizedSenders',SOAP_M_URI,null,'0','1','false'};
 		private String[] developerName_type_info=new String[]{'developerName',SOAP_M_URI,null,'1','1','false'};
 		private String[] isActive_type_info=new String[]{'isActive',SOAP_M_URI,null,'0','1','false'};
 		private String[] localPart_type_info=new String[]{'localPart',SOAP_M_URI,null,'1','1','false'};
@@ -14322,7 +14322,7 @@ global class MetadataService {
 		global String object_x;
 		private String[] connector_type_info=new String[]{'connector',SOAP_M_URI,null,'0','1','false'};
 		private String[] faultConnector_type_info=new String[]{'faultConnector',SOAP_M_URI,null,'0','1','false'};
-		private String[] filters_type_info=new String[]{'filters',SOAP_M_URI,null,'0','-1','false'};
+		private String[] filttype_info=new String[]{'filters',SOAP_M_URI,null,'0','-1','false'};
 		private String[] inputAssignments_type_info=new String[]{'inputAssignments',SOAP_M_URI,null,'0','-1','false'};
 		private String[] inputReference_type_info=new String[]{'inputReference',SOAP_M_URI,null,'0','1','false'};
 		private String[] object_x_type_info=new String[]{'object',SOAP_M_URI,null,'0','1','false'};
@@ -14353,7 +14353,7 @@ global class MetadataService {
 		global String status;
 		global String targetSobjectType;
 		private String[] bulkEnabled_type_info=new String[]{'bulkEnabled',SOAP_M_URI,null,'1','1','false'};
-		private String[] bypassTriggers_type_info=new String[]{'bypassTriggers',SOAP_M_URI,null,'1','1','false'};
+		private String[] bypassTriggtype_info=new String[]{'bypassTriggers',SOAP_M_URI,null,'1','1','false'};
 		private String[] bypassWorkflow_type_info=new String[]{'bypassWorkflow',SOAP_M_URI,null,'1','1','false'};
 		private String[] description_type_info=new String[]{'description',SOAP_M_URI,null,'1','1','false'};
 		private String[] developerName_type_info=new String[]{'developerName',SOAP_M_URI,null,'1','1','false'};
@@ -14426,7 +14426,7 @@ global class MetadataService {
 		private String[] drillEnabled_type_info=new String[]{'drillEnabled',SOAP_M_URI,null,'0','1','false'};
 		private String[] drillToDetailEnabled_type_info=new String[]{'drillToDetailEnabled',SOAP_M_URI,null,'0','1','false'};
 		private String[] enableHover_type_info=new String[]{'enableHover',SOAP_M_URI,null,'0','1','false'};
-		private String[] expandOthers_type_info=new String[]{'expandOthers',SOAP_M_URI,null,'0','1','false'};
+		private String[] expandOthtype_info=new String[]{'expandOthers',SOAP_M_URI,null,'0','1','false'};
 		private String[] flexComponentProperties_type_info=new String[]{'flexComponentProperties',SOAP_M_URI,null,'0','1','false'};
 		private String[] footer_type_info=new String[]{'footer',SOAP_M_URI,null,'0','1','false'};
 		private String[] gaugeMax_type_info=new String[]{'gaugeMax',SOAP_M_URI,null,'0','1','false'};
@@ -15253,8 +15253,8 @@ global class MetadataService {
     @JsonAccess(serializable='always' deserializable = 'always')
 	global class MetadataPort {
 		global String endpoint_x=URL.getSalesforceBaseUrl().toExternalForm() + '/services/Soap/m/42.0';
-		global Map<String,String> inputHttpHeaders_x;
-		global Map<String,String> outputHttpHeaders_x;
+		global Map<String,String> inputHttpHeadx;
+		global Map<String,String> outputHttpHeadx;
 		global String clientCertName_x;
 		global String clientCert_x;
 		global String clientCertPasswd_x;

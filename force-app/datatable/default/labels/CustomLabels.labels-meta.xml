@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
-        <fullName>ers_CancelButton</fullName>
+        <fullName>CancelButton</fullName>
         <categories>buttons</categories>
         <language>en_US</language>
         <protected>false</protected>
@@ -9,7 +9,7 @@
         <value>Cancel</value>
     </labels>
     <labels>
-        <fullName>ers_SaveButton</fullName>
+        <fullName>SaveButton</fullName>
         <categories>buttons</categories>
         <language>en_US</language>
         <protected>false</protected>
@@ -17,7 +17,7 @@
         <value>Save</value>
     </labels>
     <labels>
-        <fullName>ers_ClearSelectionButton</fullName>
+        <fullName>ClearSelectionButton</fullName>
         <categories>buttons</categories>
         <language>en_US</language>
         <protected>false</protected>
@@ -25,7 +25,7 @@
         <value>Clear Selection</value>
     </labels>
     <labels>
-        <fullName>ers_SetFilterAction</fullName>
+        <fullName>SetFilterAction</fullName>
         <categories>actions</categories>
         <language>en_US</language>
         <protected>false</protected>
@@ -33,7 +33,7 @@
         <value>Set Filter</value>
     </labels>
     <labels>
-        <fullName>ers_ClearFilterAction</fullName>
+        <fullName>ClearFilterAction</fullName>
         <categories>actions</categories>
         <language>en_US</language>
         <protected>false</protected>
@@ -41,7 +41,7 @@
         <value>Clear Filter</value>
     </labels>
     <labels>
-        <fullName>ers_ColumnHeader</fullName>
+        <fullName>ColumnHeader</fullName>
         <categories>headers</categories>
         <language>en_US</language>
         <protected>false</protected>
@@ -49,7 +49,7 @@
         <value>Column</value>
     </labels>
     <labels>
-        <fullName>ers_FilterHeader</fullName>
+        <fullName>FilterHeader</fullName>
         <categories>headers</categories>
         <language>en_US</language>
         <protected>false</protected>
@@ -57,7 +57,7 @@
         <value>Filter</value>
     </labels>
     <labels>
-        <fullName>ers_LabelHeader</fullName>
+        <fullName>LabelHeader</fullName>
         <categories>headers</categories>
         <language>en_US</language>
         <protected>false</protected>
@@ -65,7 +65,7 @@
         <value>Label</value>
     </labels>
     <labels>
-        <fullName>ers_ErrorRequiredEntry</fullName>
+        <fullName>ErrorRequiredEntry</fullName>
         <categories>messages</categories>
         <language>en_US</language>
         <protected>false</protected>
@@ -73,11 +73,11 @@
         <value>This is a required entry.  At least 1 row must be selected.</value>
     </labels>
     <labels>
-        <fullName>ers_EmptyTableMessage</fullName>
+        <fullName>EmptyTableMessage</fullName>
         <categories>messages</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Empty</shortDescription>
         <value>This table currently has no data to display</value>
-    </labels>          
+    </labels>
 </CustomLabels>

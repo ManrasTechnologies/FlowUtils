@@ -9,24 +9,24 @@
 **/
 
 import { LightningElement, api, track, wire } from 'lwc';
-import getReturnResults from '@salesforce/apex/ers_DatatableController.getReturnResults';
+import getReturnResults from '@salesforce/apex/DatatableController.getReturnResults';
 import { FlowAttributeChangeEvent, FlowNavigationNextEvent } from 'lightning/flowSupport';
 import {getPicklistValuesByRecordType} from "lightning/uiObjectInfoApi";
-import { getConstants } from 'c/ers_datatableUtils';
+import { getConstants } from 'c/datatableUtils';
 
 // Translatable Custom Labels
-import CancelButton from '@salesforce/label/c.ers_CancelButton';
-import SaveButton from '@salesforce/label/c.ers_SaveButton';
-import ClearSelectionButton from '@salesforce/label/c.ers_ClearSelectionButton';
-import SetFilterAction from '@salesforce/label/c.ers_SetFilterAction';
-import ClearFilterAction from '@salesforce/label/c.ers_ClearFilterAction';
-import ColumnHeader from '@salesforce/label/c.ers_ColumnHeader';
-import FilterHeader from '@salesforce/label/c.ers_FilterHeader';
-import LabelHeader from '@salesforce/label/c.ers_LabelHeader';
-import RequiredMessage from '@salesforce/label/c.ers_ErrorRequiredEntry';
-import EmptyMessage from '@salesforce/label/c.ers_EmptyTableMessage';
+import CancelButton from '@salesforce/label/c.CancelButton';
+import SaveButton from '@salesforce/label/c.SaveButton';
+import ClearSelectionButton from '@salesforce/label/c.ClearSelectionButton';
+import SetFilterAction from '@salesforce/label/c.SetFilterAction';
+import ClearFilterAction from '@salesforce/label/c.ClearFilterAction';
+import ColumnHeader from '@salesforce/label/c.ColumnHeader';
+import FilterHeader from '@salesforce/label/c.FilterHeader';
+import LabelHeader from '@salesforce/label/c.LabelHeader';
+import RequiredMessage from '@salesforce/label/c.ErrorRequiredEntry';
+import EmptyMessage from '@salesforce/label/c.EmptyTableMessage';
 
-const CONSTANTS = getConstants();   // From ers_datatableUtils : VERSION_NUMBER, MAXROWCOUNT, ROUNDWIDTH, MYDOMAIN, ISCOMMUNITY
+const CONSTANTS = getConstants();   // From datatableUtils : VERSION_NUMBER, MAXROWCOUNT, ROUNDWIDTH, MYDOMAIN, ISCOMMUNITY
 
 const MYDOMAIN = CONSTANTS.MYDOMAIN;
 const ISCOMMUNITY = CONSTANTS.ISCOMMUNITY;
@@ -828,7 +828,7 @@ export default class Datatable extends LightningElement {
             } else {
                 data = (this._tableData) ? JSON.parse(this.tableDataString) : [];
                 data.forEach(record => { 
-                    delete record['attributes'];    // When running the Column Wizard, clean up the record string before getting the field details from ers_DatatableController
+                    delete record['attributes'];    // When running the Column Wizard, clean up the record string before getting the field details from DatatableController
                 });
             }
 
@@ -1379,7 +1379,7 @@ export default class Datatable extends LightningElement {
 
         //Manipulate the datatable draftValues
         //Find if there is existing draftValue that matches the keyField
-        let draftValues = this.template.querySelector('c-ers_custom-lightning-datatable').draftValues;
+        let draftValues = this.template.querySelector('c-custom-lightning-datatable').draftValues;
         let eventDraftValue = event.detail.draftValues[0]
         let foundIndex = draftValues.findIndex(value => value[this.keyField] == eventDraftValue[this.keyField]);
 
@@ -1391,7 +1391,7 @@ export default class Datatable extends LightningElement {
             draftValues.push(eventDraftValue);
         }
 
-        this.template.querySelector('c-ers_custom-lightning-datatable').draftValues = draftValues;
+        this.template.querySelector('c-custom-lightning-datatable').draftValues = draftValues;
 
         //call the usual handleCellChange        
         this.handleCellChange(event);
@@ -1498,7 +1498,7 @@ export default class Datatable extends LightningElement {
         if (!this.suppressBottomBar) {
             this.columns = [...this.columns];   // Force clearing of the edit highlights
             //clear draftValues. this is required for custom column types that need to specifically write into draftValues
-            this.template.querySelector('c-ers_custom-lightning-datatable').draftValues = [];
+            this.template.querySelector('c-custom-lightning-datatable').draftValues = [];
 
             if(this.navigateNextOnSave) {       // Added in v3.5.0
                 const navigateNextEvent = new FlowNavigationNextEvent();

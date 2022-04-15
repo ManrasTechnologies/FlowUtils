@@ -5,7 +5,7 @@
         <label>Decode Cell Attribute</label>
         <locationX>548</locationX>
         <locationY>292</locationY>
-        <actionName>ers_EncodeDecodeURL</actionName>
+        <actionName>EncodeDecodeURL</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Decode_Type_Attribute</targetReference>
@@ -23,7 +23,7 @@
         <label>Decode Other Attribute</label>
         <locationX>213</locationX>
         <locationY>292</locationY>
-        <actionName>ers_EncodeDecodeURL</actionName>
+        <actionName>EncodeDecodeURL</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Set_Quick_Choice_Options</targetReference>
@@ -41,7 +41,7 @@
         <label>Decode Type Attribute</label>
         <locationX>390</locationX>
         <locationY>292</locationY>
-        <actionName>ers_EncodeDecodeURL</actionName>
+        <actionName>EncodeDecodeURL</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Decode_Other_Attribute</targetReference>
@@ -59,7 +59,7 @@
         <label>Get Field Information usf</label>
         <locationX>1263</locationX>
         <locationY>210</locationY>
-        <actionName>usf__GetFieldInformation</actionName>
+        <actionName>GetFieldInformation</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Select_Fields</targetReference>
@@ -80,7 +80,7 @@
         <label>Get First xx Records</label>
         <locationX>2132</locationX>
         <locationY>208</locationY>
-        <actionName>ers_QueryNRecords</actionName>
+        <actionName>QueryNRecords</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>Get_Records_Result</targetReference>
@@ -2112,7 +2112,7 @@
     <status>Draft</status>
     <variables>
         <name>apexColFieldDescriptors_usf</name>
-        <apexClass>usf__FieldDescriptor</apexClass>
+        <apexClass>FieldDescriptor</apexClass>
         <dataType>Apex</dataType>
         <isCollection>true</isCollection>
         <isInput>false</isInput>
@@ -2120,7 +2120,7 @@
     </variables>
     <variables>
         <name>apexColSelectedFieldDescriptors_usf</name>
-        <apexClass>usf__FieldDescriptor</apexClass>
+        <apexClass>FieldDescriptor</apexClass>
         <dataType>Apex</dataType>
         <isCollection>true</isCollection>
         <isInput>false</isInput>
@@ -2128,7 +2128,7 @@
     </variables>
     <variables>
         <name>apexFieldDescriptor</name>
-        <apexClass>usf__FieldDescriptor</apexClass>
+        <apexClass>FieldDescriptor</apexClass>
         <dataType>Apex</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
