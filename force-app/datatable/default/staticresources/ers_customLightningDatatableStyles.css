@@ -1,0 +1,83 @@
+/************************************/
+/* style sheet to bypass shadow dom */
+/************************************/
+
+/********************************/
+/* c-ers_custom-lightning-datatable */
+/********************************/
+
+/* allow overflow of combobox if class overflowEnabled is present */
+.overflowEnabled c-ers_custom-lightning-datatable .slds-scrollable_x,
+.overflowEnabled c-ers_custom-lightning-datatable .slds-scrollable_y {
+    overflow: visible;
+}
+/* stretch cell width of combobox to 100% */
+c-ers_custom-lightning-datatable lightning-primitive-cell-factory .slds-hyphenate {
+    width: 100%;
+}
+/* ensures that custom column cells remain higlighted on hover when edited */
+.slds-scope c-ers_custom-lightning-datatable .slds-table:not(.slds-no-row-hover) tbody tr:hover>td.slds-is-edited,
+c-ers_custom-lightning-datatable  .slds-table:not(.slds-no-row-hover) tbody tr:hover>td.slds-is-edited {
+    background-color: rgb(250, 255, 189);
+}
+/* show edit pen when td is hovered */
+.slds-scope c-ers_custom-lightning-datatable  .slds-table:not(.slds-no-row-hover) tbody td:hover lightning-button-icon.cell-icon__edit .slds-button_icon,
+c-ers_custom-lightning-datatable .slds-table:not(.slds-no-row-hover) tbody td:hover lightning-button-icon.cell-icon__edit .slds-button_icon {
+    visibility: visible;
+}
+/* show white background on hover if cell is editable */
+.slds-scope c-ers_custom-lightning-datatable  .slds-table:not(.slds-no-row-hover) tbody td:hover:not(.slds-is-edited) .cell__is-editable,
+c-ers_custom-lightning-datatable  .slds-table:not(.slds-no-row-hover) tbody td:hover:not(.slds-is-edited) .cell__is-editable {
+    background-color: white;
+}
+/********************************/
+/**** c-ers_combobox-column-type ****/
+/********************************/
+/* height of combobox */
+c-ers_combobox-column-type .slds-dropdown {
+    max-height: 180px;
+}
+/* Remove position:absolute on the dropdown icon so that it doesn't appear on top of column action dropdown*/
+c-ers_combobox-column-type lightning-base-combobox .slds-input-has-icon lightning-icon.slds-input__icon{
+    top: 0;
+    position: static;
+    padding-right: 1.3rem;
+}
+.slds-scope c-ers_combobox-column-type lightning-base-combobox .slds-input-has-icon .slds-input__icon {
+    top: 0;
+    margin-top: 0.1rem;
+    position: static;
+    padding-right: 1.3rem;
+}
+
+/* v3.4.5 This removes mouse interaction with the dropdown icon, so that the dropdown doesn't lose focus */
+.slds-scope c-ers_combobox-column-type lightning-base-combobox .slds-input-has-icon .slds-input__icon-group_right,
+c-ers_combobox-column-type lightning-base-combobox .slds-input-has-icon .slds-input__icon-group_right {
+    pointer-events: none;
+    margin-top:-10px /* this fixes icon alignment caused by position static */
+}
+/* v3.4.5 This corrects default lightning datatable behaviour, where the save/cancel footer will cover the horizontal scrollbar */
+.slds-scope c-datatable c-ers_custom-lightning-datatable .dt-outer-container lightning-primitive-datatable-status-bar .slds-docked-form-footer.slds-is-absolute,
+c-datatable c-ers_custom-lightning-datatable .dt-outer-container lightning-primitive-datatable-status-bar .slds-docked-form-footer.slds-is-absolute {
+    position: relative; /* changes position absolute to relative */
+}
+
+/********************************/
+/******** custom classes ********/
+/********************************/
+.combobox-view__min-height {
+    /* min-height: 36px; */     /* Commented out so rows with editable picklist fields will not default to a taller height */
+}
+.cell-icon__edit {
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+/* v3.5.0 Move border styling to css */
+.datatable-border {
+    border-left: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(229, 229, 229));
+    border-top: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(229, 229, 229));
+    border-right: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(229, 229, 229));
+    /* border-bottom: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(229, 229, 229)); */
+    margin-left: -1px;
+}
